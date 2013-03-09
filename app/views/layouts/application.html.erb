@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+    <h1>Rafa's Next Baby Name Voter!</h1>
+</header>
+<% flash.each do |name, msg| %>
+    <div><%= msg %></div>
+<% end %>
 
 <%= yield %>
 
