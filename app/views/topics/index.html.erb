@@ -15,7 +15,7 @@
       <td><%= topic.description %></td>
       <td><%= pluralize(topic.votes.length, "vote") %></td>
       <td><%= button_to 'totally!', votes_path(topic_id: topic.id), method: :post %></td>
-      <td><%= link_to 'delete', topic, confirm: 'Are you sure?', method: :delete %></td>
+      <td><%= link_to 'rescind', topic, confirm: 'Are you sure?', method: :delete %></td>
     </tr>
 <% end %>
 </table>
